@@ -10,6 +10,7 @@ namespace Practice_Stuff
     {
         static void Main(string[] args)
         {
+            //Counting vowels in a string
             Console.WriteLine("Let's count the vowels.. Enter a phrase of any length:");
             string userPhrase = Console.ReadLine().ToLower();
 
@@ -25,6 +26,16 @@ namespace Practice_Stuff
 
             Console.WriteLine("There are " + vowelCount + " vowels in your phrase.");
             Console.ReadLine();
+
+            //Reversing a string
+            Console.WriteLine("We are now going to reverse the phrase:");
+
+            char[] reversedPhrase = userPhrase.ToCharArray();
+            Array.Reverse(reversedPhrase);
+            string newPhrase = new string(reversedPhrase);
+            Console.WriteLine(newPhrase);
+            Console.ReadLine();
+
 
 
 
