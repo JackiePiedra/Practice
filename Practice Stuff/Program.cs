@@ -36,6 +36,16 @@ namespace Practice_Stuff
             Console.WriteLine(newPhrase);
             Console.ReadLine();
 
+            //sorting the words in the phrase alphabetically
+            Console.WriteLine("Now let's sort the words in alphabetical order:");
+
+            string[] wordsInPhrase = userPhrase.Split(' ');
+            Array.Sort(wordsInPhrase);
+            foreach(string word in wordsInPhrase)
+            {
+                Console.Write(word + " ");
+            }
+            Console.ReadLine();
 
 
 
